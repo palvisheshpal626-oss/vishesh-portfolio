@@ -83,9 +83,9 @@ export const PERSONAL_INFO = {
     email: "mailto:palvisheshpal626@gmail.com"
   },
   resume: {
-    downloadUrl: "/VISHESH KUMAR.pdf",
+    downloadUrl: "/VISHESH KUMAR (2).pdf",
     fallbackUrl: "/resume.pdf",
-    filename: "VISHESH KUMAR.pdf"
+    filename: "VISHESH KUMAR (2).pdf"
   },
   images: {
     heroPortrait: "/f11c5b9d-9439-4ec9-ae86-f60bd7029a30.png",

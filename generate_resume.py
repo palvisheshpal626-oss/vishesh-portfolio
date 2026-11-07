@@ -27,6 +27,12 @@ async def generate():
     
     # Copy to all target locations
     targets = [
+        Path("VISHESH KUMAR (2).pdf").resolve(),
+        Path("VISHESH KUMAR (2).pdf.pdf").resolve(),
+        Path("public/VISHESH KUMAR (2).pdf").resolve(),
+        Path("public/VISHESH KUMAR (2).pdf.pdf").resolve(),
+        Path("VISHESH KUMAR RESUME.pdf").resolve(),
+        Path("public/VISHESH KUMAR RESUME.pdf").resolve(),
         Path("VISHESH KUMAR.pdf").resolve(),
         Path("public/VISHESH KUMAR.pdf").resolve(),
         Path("public/Vishesh_Kumar_Resume.pdf").resolve(),
