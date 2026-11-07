@@ -83,9 +83,9 @@ export const PERSONAL_INFO = {
     email: "mailto:palvisheshpal626@gmail.com"
   },
   resume: {
-    downloadUrl: "/Black and White Professional ATS Friendly Resume.pdf",
+    downloadUrl: "/VISHESH KUMAR.pdf",
     fallbackUrl: "/resume.pdf",
-    filename: "Black and White Professional ATS Friendly Resume.pdf"
+    filename: "VISHESH KUMAR.pdf"
   },
   images: {
     heroPortrait: "/f11c5b9d-9439-4ec9-ae86-f60bd7029a30.png",
