@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0f;
+  --foreground: #f4f4f7;
+  --accent: #e5c378;
+  --accent-muted: #b8974e;
+  --border: rgba(255, 255, 255, 0.08);
+  --card: #13141d;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  selection-background-color: rgba(229, 195, 120, 0.3);
+  selection-color: #ffffff;
+}
+
+::selection {
+  background: rgba(229, 195, 120, 0.3);
+  color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #232636;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e5c378;
+}
+
+/* Framer-grade Glass & Card Styles */
+.framer-card {
+  background: #13141d;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.framer-card:hover {
+  border-color: rgba(229, 195, 120, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(229, 195, 120, 0.2);
+}
+
+.framer-pill {
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.2s ease;
+}
+
+.framer-pill:hover {
+  border-color: rgba(229, 195, 120, 0.4);
+  background: rgba(229, 195, 120, 0.06);
+}
+
+/* Legacy fallbacks mapped cleanly to modern design */
+.glass-panel {
+  background: #13141d;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+}
+
+.glass-panel-glow {
+  background: #161824;
+  border: 1px solid rgba(229, 195, 120, 0.25);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+  border-radius: 1.25rem;
+}
+
+.text-glow-cyan {
+  color: #ffffff;
+}
+
+.text-glow-purple {
+  color: #e5c378;
+}
+
+.border-glow-cyan {
+  border-color: rgba(229, 195, 120, 0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
